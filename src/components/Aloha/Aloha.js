@@ -8,7 +8,7 @@ class Aloha extends React.Component {
         }
     }
 
-    ClickHandler() {
+    clickHandler() {
         this.setState({
             isGreeting: !this.state.isGreeting
         })
@@ -16,9 +16,10 @@ class Aloha extends React.Component {
 
     render() {
         const {isGreeting} = this.state;
+        const {name, lastName} = this.props;
         const greetingText = isGreeting ? 'Hello' : 'Bye';
 
-        return <h1 onClick={() =>{this.ClickHandler()}}>{greetingText} {this.props.name} from {this.props.country}!</h1>
+        return <h1 onClick={() => {this.clickHandler()}}>{greetingText} {name} {lastName}!</h1>
     }
 
 }

@@ -14,7 +14,7 @@ class App extends React.Component {
       on: !this.state.on
     })
   }
-
+  
   render() {
     const className = this.state.on ? 'lamp-on' : 'lamp-off';
 
@@ -28,6 +28,7 @@ class App extends React.Component {
 }
 
 export default App;
+
 /*
 Створити кружечок-лампочку і кнопку-вимикач
 За натисненням на кнопку кружечок має "підсвітитись" (наповнитись жовтим кольором)
